@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TravelMantra – Plan Your Journey Within Budget</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen">
+
+  <!-- ==================== LANDING PAGE ==================== -->
+  <div id="landing-page">
+
+    <!-- Hero Section -->
+    <section class="relative flex flex-col items-center justify-center min-h-[70vh] px-6 py-20 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 text-center">
+      <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
+        Travel Mantra
+      </h1>
+      <p class="text-lg md:text-2xl text-blue-200 max-w-2xl mb-10 leading-relaxed">
+        Choose the perfect vehicle at the right cost — plan your Indian journey smartly, within your budget.
+      </p>
+      <button
+        onclick="showPlannerPage()"
+        class="bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold text-lg px-10 py-4 rounded-full shadow-lg transition transform hover:scale-105"
+      >
+        Plan Your Trip Now
+      </button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="px-6 py-16 bg-slate-800">
+      <h2 class="text-3xl font-bold text-center text-amber-300 mb-12">Our Travel Options</h2>
+      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+
+        <!-- Flight -->
+        <div class="bg-slate-700 rounded-2xl overflow-hidden shadow-xl text-center">
+          <img
+            src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=350&fit=crop"
+            alt="Flight"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-sky-300 mb-2">Flight</h3>
+            <p class="text-emerald-300 font-semibold text-lg mb-4">Estimated Cost: ₹3,500 – ₹15,000</p>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              <strong class="text-white">MakeMyTrip</strong> &nbsp;|&nbsp;
+              <strong class="text-white">Goibibo</strong> &nbsp;|&nbsp;
+              <strong class="text-white">IndiGo</strong> &nbsp;|&nbsp;
+              <strong class="text-white">Cleartrip</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- Indian Railways -->
+        <div class="bg-slate-700 rounded-2xl overflow-hidden shadow-xl text-center">
+          <img
+            src="https://media.assettype.com/outlookbusiness/import/uploadimage/library/16_9/16_9_5/IRCTC_1647099628.webp?w=800&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0"
+            alt="Indian Railways train"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-orange-300 mb-2">Indian Railways</h3>
+            <p class="text-emerald-300 font-semibold text-lg mb-4">Estimated Cost: ₹400 – ₹4,500</p>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              <strong class="text-white">IRCTC</strong> &nbsp;|&nbsp;
+              <strong class="text-white">ConfirmTkt</strong> &nbsp;|&nbsp;
+              <strong class="text-white">RailYatri</strong> &nbsp;|&nbsp;
+              <strong class="text-white">Paytm Travel</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- Bus -->
+        <div class="bg-slate-700 rounded-2xl overflow-hidden shadow-xl text-center">
+          <img
+            src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&h=350&fit=crop"
+            alt="Bus"
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-lime-300 mb-2">Bus</h3>
+            <p class="text-emerald-300 font-semibold text-lg mb-4">Estimated Cost: ₹250 – ₹2,500</p>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              <strong class="text-white">RedBus</strong> &nbsp;|&nbsp;
+              <strong class="text-white">AbhiBus</strong> &nbsp;|&nbsp;
+              <strong class="text-white">MakeMyTrip Bus</strong> &nbsp;|&nbsp;
+              <strong class="text-white">Paytm Bus</strong>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Top Hotels in different cities of India -->
+    <section class="px-6 py-16 bg-gradient-to-b from-slate-900 to-blue-950">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-amber-300 mb-12">
+        Top Hotels in different cities of India 
+      </h2>
+      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Delhi -->
+        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+          <h3 class="text-xl font-bold text-sky-300 mb-3">Delhi</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">The Taj Mahal Hotel</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.leela.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">The Leela Palace</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.itchotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">ITC Maurya</a> <span class="text-emerald-400 font-semibold"></span></li>
+          </ul>
+        </div>
+
+        <!-- Mumbai -->
+        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+          <h3 class="text-xl font-bold text-sky-300 mb-3">Mumbai</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Mahal Palace</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.marriott.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">JW Marriott Juhu</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.oberoihotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">The Oberoi Mumbai</a> <span class="text-emerald-400 font-semibold"></span></li>
+          </ul>
+        </div>
+
+        <!-- Bangalore -->
+        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+          <h3 class="text-xl font-bold text-sky-300 mb-3">Bangalore</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.itchotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">ITC Gardenia</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj West End</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.leela.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">The Leela Bangalore</a> <span class="text-emerald-400 font-semibold"></span></li>
+          </ul>
+        </div>
+
+        <!-- Chennai -->
+        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+          <h3 class="text-xl font-bold text-sky-300 mb-3">Chennai</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Coromandel</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.itchotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">ITC Grand Chola</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.hyatt.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Park Hyatt Chennai</a> <span class="text-emerald-400 font-semibold"></span></li>
+          </ul>
+        </div>
+
+        <!-- Kolkata -->
+        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+          <h3 class="text-xl font-bold text-sky-300 mb-3">Kolkata</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Bengal</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.oberoihotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">The Oberoi Grand</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.marriott.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">JW Marriott Kolkata</a> <span class="text-emerald-400 font-semibold"></span></li>
+          </ul>
+        </div>
+
+        <!-- Hyderabad -->
+        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+          <h3 class="text-xl font-bold text-sky-300 mb-3">Hyderabad</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Falaknuma Palace</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.itchotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">ITC Kohenur</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.novotel.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Novotel Hyderabad</a> <span class="text-emerald-400 font-semibold"></span></li>
+          </ul>
+        </div>
+
+        <!-- Jaipur -->
+        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+          <h3 class="text-xl font-bold text-sky-300 mb-3">Jaipur</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Rambagh Palace</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.oberoihotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">The Oberoi Rajvilas</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.leela.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">The Leela Jaipur</a> <span class="text-emerald-400 font-semibold"></span></li>
+          </ul>
+        </div>
+
+        <!-- Goa -->
+        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+          <h3 class="text-xl font-bold text-sky-300 mb-3">Goa</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Exotica Resort</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.marriott.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">W Goa</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.hyatt.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Grand Hyatt Goa</a> <span class="text-emerald-400 font-semibold"></span></li>
+          </ul>
+        </div>
+
+        <!-- Agra -->
+        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+          <h3 class="text-xl font-bold text-sky-300 mb-3">Agra</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.oberoihotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">The Oberoi Amarvilas</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">ITC Mughal</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.tridenthotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Trident Agra</a> <span class="text-emerald-400 font-semibold"></span></li>
+          </ul>
+        </div>
+
+        <!-- Kochi -->
+        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+          <h3 class="text-xl font-bold text-sky-300 mb-3">Kochi</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Malabar Resort</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.marriott.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Marriott Hotel Kochi</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.leela.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">The Leela Kempinski</a> <span class="text-emerald-400 font-semibold"></span></li>
+          </ul>
+        </div>
+
+        <!-- Varanasi -->
+        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+          <h3 class="text-xl font-bold text-sky-300 mb-3">Varanasi</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Ganges</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.radissonhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Radisson Hotel Varanasi</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.itchotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Ramada Plaza Varanasi</a> <span class="text-emerald-400 font-semibold"></span></li>
+          </ul>
+        </div>
+
+        <!-- Udaipur -->
+        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+          <h3 class="text-xl font-bold text-sky-300 mb-3">Udaipur</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Lake Palace</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.oberoihotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">The Oberoi Udaivilas</a> <span class="text-emerald-400 font-semibold"></span></li>
+            <li><a href="https://www.leela.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">The Leela Palace Udaipur</a> <span class="text-emerald-400 font-semibold"></span></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 bg-slate-950 text-slate-400 text-sm">
+      &copy; 2026 TravelMantra. All rights reserved.
+    </footer>
+  </div>
+
+  <!-- ==================== PLANNER PAGE ==================== -->
+  <div id="planner-page" class="hidden min-h-screen bg-blue-950 px-6 py-12">
+
+    <button
+      onclick="showLandingPage()"
+      class="mb-8 text-blue-200 hover:text-white underline text-sm"
+    >
+      &larr; Back to Home
+    </button>
+
+    <div class="max-w-2xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">
+        Travel Mantra
+      </h1>
+      <p class="text-lg md:text-xl text-blue-200 mb-10">
+        Choose the perfect vehicle at the right cost — plan your Indian journey smartly, within your budget.
+      </p>
+
+      <!-- Input Box -->
+      <div class="bg-blue-900 border border-blue-700 rounded-2xl p-8 text-left shadow-xl">
+        <div class="mb-6">
+          <label for="budget" class="block text-blue-100 font-semibold mb-2 text-lg">
+            Enter your Budget per person:-
+          </label>
+          <div class="relative">
+            <select
+              id="budget"
+              onchange="updateHotelResults()"
+              class="w-full appearance-none px-4 py-3 pr-12 rounded-lg bg-blue-800 border border-blue-600 text-white focus:outline-none focus:ring-2 focus:ring-amber-400 cursor-pointer"
+            >
+              <option value="" disabled selected>Select budget range</option>
+              <option value="0-1000">₹0 – ₹1,000</option>
+              <option value="1000-2500">₹1,000 – ₹2,500</option>
+              <option value="2500-5000">₹2,500 – ₹5,000</option>
+              <option value="5000-7000">₹5,000 – ₹7,000</option>
+              <option value="7000-10000">₹7,000 – ₹10,000</option>
+              <option value="10000-above">₹10,000 and above</option>
+            </select>
+            <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4 text-blue-200 text-xl">&#9660;</span>
+          </div>
+        </div>
+        <div class="mb-6">
+          <label for="vehicle" class="block text-blue-100 font-semibold mb-2 text-lg">
+            Enter your preferred Vehicle:-
+          </label>
+          <input
+            type="text"
+            id="vehicle"
+            oninput="updateHotelResults()"
+            placeholder="Aeroplane, Train or Bus"
+            class="w-full px-4 py-3 rounded-lg bg-blue-800 border border-blue-600 text-white placeholder-blue-400 focus:outline-none focus:ring-2 focus:ring-amber-400"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="location-from" class="block text-blue-100 font-semibold mb-2 text-lg">
+            Location (From):-
+          </label>
+          <div class="relative">
+            <select
+              id="location-from"
+              onchange="updateHotelResults()"
+              class="w-full appearance-none px-4 py-3 pr-12 rounded-lg bg-blue-800 border border-blue-600 text-white focus:outline-none focus:ring-2 focus:ring-amber-400 cursor-pointer"
+            >
+              <option value="" disabled selected>Select departure city</option>
+            </select>
+            <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4 text-blue-200 text-xl">&#9660;</span>
+          </div>
+        </div>
+        <div class="mb-6">
+          <label for="location-to" class="block text-blue-100 font-semibold mb-2 text-lg">
+            Location (To):-
+          </label>
+          <div class="relative">
+            <select
+              id="location-to"
+              onchange="updateHotelResults()"
+              class="w-full appearance-none px-4 py-3 pr-12 rounded-lg bg-blue-800 border border-blue-600 text-white focus:outline-none focus:ring-2 focus:ring-amber-400 cursor-pointer"
+            >
+              <option value="" disabled selected>Select destination city</option>
+            </select>
+            <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4 text-blue-200 text-xl">&#9660;</span>
+          </div>
+        </div>
+        <div class="mb-6">
+          <label for="hotel-budget" class="block text-blue-100 font-semibold mb-2 text-lg">
+            Hotel Budget per person:-
+          </label>
+          <div class="relative">
+            <select
+              id="hotel-budget"
+              onchange="updateHotelResults()"
+              class="w-full appearance-none px-4 py-3 pr-12 rounded-lg bg-blue-800 border border-blue-600 text-white focus:outline-none focus:ring-2 focus:ring-amber-400 cursor-pointer"
+            >
+              <option value="" disabled selected>Select hotel budget range</option>
+              <option value="0-1000">₹0 – ₹1,000</option>
+              <option value="1000-2500">₹1,000 – ₹2,500</option>
+              <option value="2500-5000">₹2,500 – ₹5,000</option>
+              <option value="5000-7000">₹5,000 – ₹7,000</option>
+              <option value="7000-10000">₹7,000 – ₹10,000</option>
+              <option value="10000-above">₹10,000 and above</option>
+            </select>
+            <span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-4 text-blue-200 text-xl">&#9660;</span>
+          </div>
+        </div>
+        <button
+          onclick="checkBudgetAndVehicle()"
+          class="w-full bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold text-lg py-3 rounded-lg transition"
+        >
+          Find Travel Options
+        </button>
+
+        <!-- Hotel Results Sub-box (inside main box) -->
+        <div id="hotel-result-area" class="mt-6 hidden"></div>
+      </div>
+
+      <!-- Travel Results (outside main box) -->
+      <div id="result-area" class="mt-8 text-left"></div>
+    </div>
+  </div>
+
+  <script>
+    const VALID_VEHICLES = ["aeroplane", "train", "bus"];
+
+    const INDIAN_CITIES = [
+      { name: "Agartala", lat: 23.8315, lon: 91.2868 },
+      { name: "Agra", lat: 27.1767, lon: 78.0081 },
+      { name: "Ahmedabad", lat: 23.0225, lon: 72.5714 },
+      { name: "Aizawl", lat: 23.7271, lon: 92.7176 },
+      { name: "Ajmer", lat: 26.4499, lon: 74.6399 },
+      { name: "Aligarh", lat: 27.8974, lon: 78.0880 },
+      { name: "Allahabad", lat: 25.4358, lon: 81.8463 },
+      { name: "Amritsar", lat: 31.6340, lon: 74.8723 },
+      { name: "Asansol", lat: 23.6739, lon: 86.9524 },
+      { name: "Aurangabad", lat: 19.8762, lon: 75.3433 },
+      { name: "Bangalore", lat: 12.9716, lon: 77.5946 },
+      { name: "Bareilly", lat: 28.3670, lon: 79.4304 },
+      { name: "Belgaum", lat: 15.8497, lon: 74.4977 },
+      { name: "Bhavnagar", lat: 21.7645, lon: 72.1519 },
+      { name: "Bhilai", lat: 21.1938, lon: 81.3509 },
+      { name: "Bhopal", lat: 23.2599, lon: 77.4126 },
+      { name: "Bhubaneswar", lat: 20.2961, lon: 85.8245 },
+      { name: "Bikaner", lat: 28.0229, lon: 73.3119 },
+      { name: "Chandigarh", lat: 30.7333, lon: 76.7794 },
+      { name: "Chennai", lat: 13.0827, lon: 80.2707 },
+      { name: "Coimbatore", lat: 11.0168, lon: 76.9558 },
+      { name: "Cuttack", lat: 20.4625, lon: 85.8828 },
+      { name: "Dehradun", lat: 30.3165, lon: 78.0322 },
+      { name: "Delhi", lat: 28.7041, lon: 77.1025 },
+      { name: "Dhanbad", lat: 23.7957, lon: 86.4304 },
+      { name: "Durgapur", lat: 23.5204, lon: 87.3119 },
+      { name: "Faridabad", lat: 28.4089, lon: 77.3178 },
+      { name: "Gandhinagar", lat: 23.2156, lon: 72.6369 },
+      { name: "Gangtok", lat: 27.3389, lon: 88.6065 },
+      { name: "Ghaziabad", lat: 28.6692, lon: 77.4538 },
+      { name: "Goa", lat: 15.2993, lon: 74.1240 },
+      { name: "Gorakhpur", lat: 26.7606, lon: 83.3732 },
+      { name: "Guwahati", lat: 26.1445, lon: 91.7362 },
+      { name: "Gwalior", lat: 26.2183, lon: 78.1828 },
+      { name: "Hubli", lat: 15.3647, lon: 75.1240 },
+      { name: "Hyderabad", lat: 17.3850, lon: 78.4867 },
+      { name: "Imphal", lat: 24.8170, lon: 93.9368 },
+      { name: "Indore", lat: 22.7196, lon: 75.8577 },
+      { name: "Itanagar", lat: 27.0844, lon: 93.6053 },
+      { name: "Jabalpur", lat: 23.1815, lon: 79.9864 },
+      { name: "Jaipur", lat: 26.9124, lon: 75.7873 },
+      { name: "Jalandhar", lat: 31.3260, lon: 75.5762 },
+      { name: "Jammu", lat: 32.7266, lon: 74.8570 },
+      { name: "Jamshedpur", lat: 22.8046, lon: 86.2029 },
+      { name: "Jodhpur", lat: 26.2389, lon: 73.0243 },
+      { name: "Kanpur", lat: 26.4499, lon: 80.3319 },
+      { name: "Kochi", lat: 9.9312, lon: 76.2673 },
+      { name: "Kolkata", lat: 22.5726, lon: 88.3639 },
+      { name: "Kozhikode", lat: 11.2588, lon: 75.7804 },
+      { name: "Leh", lat: 34.1526, lon: 77.5770 },
+      { name: "Lucknow", lat: 26.8467, lon: 80.9462 },
+      { name: "Ludhiana", lat: 30.9010, lon: 75.8573 },
+      { name: "Madurai", lat: 9.9252, lon: 78.1198 },
+      { name: "Mangalore", lat: 12.9141, lon: 74.8560 },
+      { name: "Meerut", lat: 28.9845, lon: 77.7064 },
+      { name: "Mumbai", lat: 19.0760, lon: 72.8777 },
+      { name: "Muzaffarpur", lat: 26.1209, lon: 85.3647 },
+      { name: "Mysore", lat: 12.2958, lon: 76.6394 },
+      { name: "Nagpur", lat: 21.1458, lon: 79.0882 },
+      { name: "Nashik", lat: 19.9975, lon: 73.7898 },
+      { name: "Noida", lat: 28.5355, lon: 77.3910 },
+      { name: "Panaji", lat: 15.4909, lon: 73.8278 },
+      { name: "Patna", lat: 25.5941, lon: 85.1376 },
+      { name: "Port Blair", lat: 11.6234, lon: 92.7265 },
+      { name: "Pune", lat: 18.5204, lon: 73.8567 },
+      { name: "Raipur", lat: 21.2514, lon: 81.6296 },
+      { name: "Rajkot", lat: 22.3039, lon: 70.8022 },
+      { name: "Ranchi", lat: 23.3441, lon: 85.3096 },
+      { name: "Shillong", lat: 25.5788, lon: 91.8933 },
+      { name: "Shimla", lat: 31.1048, lon: 77.1734 },
+      { name: "Siliguri", lat: 26.7271, lon: 88.3953 },
+      { name: "Srinagar", lat: 34.0837, lon: 74.7973 },
+      { name: "Surat", lat: 21.1702, lon: 72.8311 },
+      { name: "Thiruvananthapuram", lat: 8.5241, lon: 76.9366 },
+      { name: "Tiruchirappalli", lat: 10.7905, lon: 78.7047 },
+      { name: "Udaipur", lat: 24.5854, lon: 73.7125 },
+      { name: "Vadodara", lat: 22.3072, lon: 73.1812 },
+      { name: "Varanasi", lat: 25.3176, lon: 82.9739 },
+      { name: "Vijayawada", lat: 16.5062, lon: 80.6480 },
+      { name: "Visakhapatnam", lat: 17.6868, lon: 83.2185 },
+      { name: "Warangal", lat: 17.9689, lon: 79.5941 }
+    ];
+
+    const TRAVEL_SITES = {
+      aeroplane: [
+        { name: "MakeMyTrip", url: "https://www.makemytrip.com/flights/", multiplier: 1.08 },
+        { name: "Goibibo", url: "https://www.goibibo.com/flights/", multiplier: 1.02 },
+        { name: "IndiGo", url: "https://www.goindigo.in/", multiplier: 0.95 },
+        { name: "Cleartrip", url: "https://www.cleartrip.com/flights", multiplier: 1.05 },
+        { name: "EaseMyTrip", url: "https://www.easemytrip.com/flights.html", multiplier: 0.98 },
+        { name: "SpiceJet", url: "https://www.spicejet.com/", multiplier: 0.93 },
+        { name: "Air India", url: "https://www.airindia.com/", multiplier: 1.1 },
+        { name: "Akasa Air", url: "https://www.akasaair.com/", multiplier: 0.97 },
+        { name: "Yatra", url: "https://www.yatra.com/flights", multiplier: 1.04 },
+        { name: "HappyEasyGo", url: "https://www.happyeasygo.com/flights/", multiplier: 0.96 },
+        { name: "ixigo Flights", url: "https://www.ixigo.com/flights", multiplier: 1.01 },
+        { name: "Paytm Flights", url: "https://paytm.com/flights", multiplier: 0.99 },
+        { name: "Booking.com Flights", url: "https://www.booking.com/flights/", multiplier: 1.07 },
+        { name: "Skyscanner", url: "https://www.skyscanner.co.in/flights", multiplier: 1.03 },
+        { name: "TripAdvisor Flights", url: "https://www.tripadvisor.in/CheapFlightsHome", multiplier: 1.06 }
+      ],
+      train: [
+        { name: "IRCTC", url: "https://www.irctc.co.in/", multiplier: 0.92 },
+        { name: "ConfirmTkt", url: "https://www.confirmtkt.com/", multiplier: 1.05 },
+        { name: "RailYatri", url: "https://www.railyatri.in/", multiplier: 1.0 },
+        { name: "Paytm Travel", url: "https://paytm.com/train-tickets", multiplier: 0.97 },
+        { name: "ixigo Trains", url: "https://www.ixigo.com/trains", multiplier: 1.03 },
+        { name: "Trainman", url: "https://www.trainman.in/", multiplier: 0.94 },
+        { name: "RailMitra", url: "https://www.railmitra.com/", multiplier: 1.02 },
+        { name: "Cleartrip Trains", url: "https://www.cleartrip.com/trains", multiplier: 1.06 },
+        { name: "Goibibo Trains", url: "https://www.goibibo.com/trains/", multiplier: 1.01 },
+        { name: "MakeMyTrip Trains", url: "https://www.makemytrip.com/railways/", multiplier: 1.04 },
+        { name: "Yatra Trains", url: "https://www.yatra.com/trains", multiplier: 1.05 },
+        { name: "EaseMyTrip Trains", url: "https://www.easemytrip.com/trains/", multiplier: 0.98 },
+        { name: "Paytm IRCTC", url: "https://paytm.com/train-tickets/irctc", multiplier: 0.96 },
+        { name: "RedRail", url: "https://www.redrail.in/", multiplier: 0.99 }
+      ],
+      bus: [
+        { name: "RedBus", url: "https://www.redbus.in/", multiplier: 0.96 },
+        { name: "AbhiBus", url: "https://www.abhibus.com/", multiplier: 1.0 },
+        { name: "MakeMyTrip Bus", url: "https://www.makemytrip.com/bus-tickets/", multiplier: 1.06 },
+        { name: "Paytm Bus", url: "https://paytm.com/bus-tickets", multiplier: 0.94 },
+        { name: "Goibibo Bus", url: "https://www.goibibo.com/bus/", multiplier: 1.02 },
+        { name: "ixigo Bus", url: "https://www.ixigo.com/buses", multiplier: 1.01 },
+        { name: "Cleartrip Bus", url: "https://www.cleartrip.com/bus", multiplier: 1.05 },
+        { name: "RailYatri Bus", url: "https://www.railyatri.in/bus-tickets", multiplier: 0.98 },
+        { name: "Zingbus", url: "https://www.zingbus.com/", multiplier: 0.97 },
+        { name: "FlixBus India", url: "https://www.flixbus.in/", multiplier: 1.03 },
+        { name: "Yatra Bus", url: "https://www.yatra.com/bus", multiplier: 1.04 },
+        { name: "EaseMyTrip Bus", url: "https://www.easemytrip.com/bus/", multiplier: 0.95 },
+        { name: "Orange Tours", url: "https://www.orangetours.in/", multiplier: 0.99 },
+        { name: "SRS Travels", url: "https://www.srstravels.in/", multiplier: 1.02 },
+        { name: "VRL Travels", url: "https://www.vrlbus.in/", multiplier: 1.01 }
+      ]
+    };
+
+    const VEHICLE_RATES = {
+      aeroplane: { base: 1800, perKm: 5.8 },
+      train: { base: 120, perKm: 0.55 },
+      bus: { base: 80, perKm: 1.35 }
+    };
+
+    const HOTEL_IMAGE =
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=80&h=80&fit=crop&auto=format&fm=jpg";
+
+    const HOTELS_BY_CITY = {
+      Delhi: [
+        { name: "Hotel Delhi Classic", url: "https://www.booking.com/city/in/new-delhi.html", price: 450 },
+        { name: "The Taj Mahal Hotel", url: "https://www.tajhotels.com", price: 8500 },
+        { name: "ITC Maurya", url: "https://www.itchotels.com", price: 6200 },
+        { name: "Treebo Trend Delhi", url: "https://www.treebo.com/hotels-in-delhi/", price: 1800 },
+        { name: "OYO Townhouse Delhi", url: "https://www.oyorooms.com/hotels-in-delhi/", price: 750 }
+      ],
+      Mumbai: [
+        { name: "Hotel Sea View Mumbai", url: "https://www.booking.com/city/in/mumbai.html", price: 380 },
+        { name: "Taj Mahal Palace", url: "https://www.tajhotels.com", price: 9500 },
+        { name: "JW Marriott Juhu", url: "https://www.marriott.com", price: 5800 },
+        { name: "FabHotel Mumbai Central", url: "https://www.fabhotels.com/hotels-in-mumbai/", price: 1200 },
+        { name: "Zostel Mumbai", url: "https://www.zostel.com/zostel-mumbai/", price: 650 }
+      ],
+      Bangalore: [
+        { name: "Treebo Bangalore Elite", url: "https://www.treebo.com/hotels-in-bangalore/", price: 420 },
+        { name: "Taj West End", url: "https://www.tajhotels.com", price: 7800 },
+        { name: "ITC Gardenia", url: "https://www.itchotels.com", price: 5500 },
+        { name: "FabHotel Indiranagar", url: "https://www.fabhotels.com/hotels-in-bangalore/", price: 1600 },
+        { name: "GoStops Bangalore", url: "https://gostops.com/", price: 550 }
+      ],
+      Chennai: [
+        { name: "Hotel Chennai Comfort", url: "https://www.booking.com/city/in/chennai.html", price: 480 },
+        { name: "Taj Coromandel", url: "https://www.tajhotels.com", price: 7200 },
+        { name: "ITC Grand Chola", url: "https://www.itchotels.com", price: 6800 },
+        { name: "Park Hyatt Chennai", url: "https://www.hyatt.com", price: 4900 },
+        { name: "OYO Flagship Chennai", url: "https://www.oyorooms.com/hotels-in-chennai/", price: 900 }
+      ],
+      Kolkata: [
+        { name: "Hotel Kolkata Inn", url: "https://www.booking.com/city/in/kolkata.html", price: 350 },
+        { name: "Taj Bengal", url: "https://www.tajhotels.com", price: 6500 },
+        { name: "The Oberoi Grand", url: "https://www.oberoihotels.com", price: 8200 },
+        { name: "Treebo Kolkata", url: "https://www.treebo.com/hotels-in-kolkata/", price: 1400 },
+        { name: "Backpackers Kolkata", url: "https://www.hostelworld.com/", price: 480 }
+      ],
+      Hyderabad: [
+        { name: "Hotel Hyderabad Stay", url: "https://www.booking.com/city/in/hyderabad.html", price: 400 },
+        { name: "Taj Falaknuma Palace", url: "https://www.tajhotels.com", price: 9800 },
+        { name: "ITC Kohenur", url: "https://www.itchotels.com", price: 5200 },
+        { name: "Novotel Hyderabad", url: "https://www.novotel.com", price: 3800 },
+        { name: "FabHotel Hitech City", url: "https://www.fabhotels.com/hotels-in-hyderabad/", price: 1100 }
+      ],
+      Jaipur: [
+        { name: "Hotel Jaipur Heritage", url: "https://www.booking.com/city/in/jaipur.html", price: 380 },
+        { name: "Rambagh Palace", url: "https://www.tajhotels.com", price: 9000 },
+        { name: "The Oberoi Rajvilas", url: "https://www.oberoihotels.com", price: 7500 },
+        { name: "Treebo Jaipur", url: "https://www.treebo.com/hotels-in-jaipur/", price: 1500 },
+        { name: "Zostel Jaipur", url: "https://www.zostel.com/zostel-jaipur/", price: 600 }
+      ],
+      Goa: [
+        { name: "Beachside Goa Lodge", url: "https://www.booking.com/region/in/goa.html", price: 450 },
+        { name: "Taj Exotica Resort", url: "https://www.tajhotels.com", price: 8500 },
+        { name: "W Goa", url: "https://www.marriott.com", price: 7200 },
+        { name: "Grand Hyatt Goa", url: "https://www.hyatt.com", price: 5600 },
+        { name: "FabHotel Calangute", url: "https://www.fabhotels.com/hotels-in-goa/", price: 1800 }
+      ],
+      Agra: [
+        { name: "Hotel Agra View", url: "https://www.booking.com/city/in/agra.html", price: 320 },
+        { name: "The Oberoi Amarvilas", url: "https://www.oberoihotels.com", price: 9500 },
+        { name: "ITC Mughal", url: "https://www.tajhotels.com", price: 4800 },
+        { name: "Trident Agra", url: "https://www.tridenthotels.com", price: 4200 },
+        { name: "OYO Agra Taj", url: "https://www.oyorooms.com/hotels-in-agra/", price: 850 }
+      ],
+      Kochi: [
+        { name: "Hotel Kochi Bay", url: "https://www.booking.com/city/in/kochi.html", price: 400 },
+        { name: "Taj Malabar Resort", url: "https://www.tajhotels.com", price: 6800 },
+        { name: "Marriott Hotel Kochi", url: "https://www.marriott.com", price: 4500 },
+        { name: "The Leela Kempinski", url: "https://www.leela.com", price: 7200 },
+        { name: "Treebo Kochi", url: "https://www.treebo.com/hotels-in-kochi/", price: 1300 }
+      ],
+      Varanasi: [
+        { name: "Ganges View Guest House", url: "https://www.booking.com/city/in/varanasi.html", price: 350 },
+        { name: "Taj Ganges", url: "https://www.tajhotels.com", price: 5200 },
+        { name: "Radisson Hotel Varanasi", url: "https://www.radissonhotels.com", price: 3800 },
+        { name: "Ramada Plaza Varanasi", url: "https://www.itchotels.com", price: 2900 },
+        { name: "Zostel Varanasi", url: "https://www.zostel.com/zostel-varanasi/", price: 550 }
+      ],
+      Udaipur: [
+        { name: "Lake View Udaipur", url: "https://www.booking.com/city/in/udaipur.html", price: 420 },
+        { name: "Taj Lake Palace", url: "https://www.tajhotels.com", price: 9800 },
+        { name: "The Oberoi Udaivilas", url: "https://www.oberoihotels.com", price: 8500 },
+        { name: "The Leela Palace Udaipur", url: "https://www.leela.com", price: 7600 },
+        { name: "Moustache Udaipur", url: "https://moustachescapes.com/", price: 700 }
+      ],
+      Pune: [
+        { name: "Hotel Pune Central", url: "https://www.booking.com/city/in/pune.html", price: 380 },
+        { name: "JW Marriott Pune", url: "https://www.marriott.com", price: 5500 },
+        { name: "Conrad Pune", url: "https://www.hilton.com", price: 6200 },
+        { name: "FabHotel Pune", url: "https://www.fabhotels.com/hotels-in-pune/", price: 1400 },
+        { name: "OYO Pune City", url: "https://www.oyorooms.com/hotels-in-pune/", price: 650 }
+      ],
+      Ahmedabad: [
+        { name: "Hotel Ahmedabad Stay", url: "https://www.booking.com/city/in/ahmedabad.html", price: 360 },
+        { name: "Hyatt Regency Ahmedabad", url: "https://www.hyatt.com", price: 4800 },
+        { name: "Courtyard Ahmedabad", url: "https://www.marriott.com", price: 4200 },
+        { name: "Treebo Ahmedabad", url: "https://www.treebo.com/hotels-in-ahmedabad/", price: 1200 },
+        { name: "FabHotel Navrangpura", url: "https://www.fabhotels.com/hotels-in-ahmedabad/", price: 900 }
+      ],
+      Lucknow: [
+        { name: "Hotel Lucknow Grand", url: "https://www.booking.com/city/in/lucknow.html", price: 340 },
+        { name: "Taj Mahal Lucknow", url: "https://www.tajhotels.com", price: 5800 },
+        { name: "Hyatt Regency Lucknow", url: "https://www.hyatt.com", price: 4500 },
+        { name: "Treebo Lucknow", url: "https://www.treebo.com/hotels-in-lucknow/", price: 1100 },
+        { name: "OYO Lucknow", url: "https://www.oyorooms.com/hotels-in-lucknow/", price: 580 }
+      ]
+    };
+
+    function applyHotelImage(hotels) {
+      return hotels.map(hotel => ({ ...hotel, image: HOTEL_IMAGE }));
+    }
+
+    function parseBudgetRange(value) {
+      if (!value) return null;
+      if (value === "10000-above") {
+        return { min: 10000, max: Infinity, isAbove: true };
+      }
+      if (!value.includes("-")) return null;
+      const parts = value.split("-");
+      return { min: parseInt(parts[0], 10), max: parseInt(parts[1], 10), isAbove: false };
+    }
+
+    function formatBudgetRangeLabel(range) {
+      if (range.isAbove) return "₹10,000 and above";
+      return `₹${range.min.toLocaleString("en-IN")} – ₹${range.max.toLocaleString("en-IN")}`;
+    }
+
+    function hotelMatchesBudget(hotel, range) {
+      if (range.isAbove) return hotel.price >= range.min;
+      return hotel.price >= range.min && hotel.price <= range.max;
+    }
+
+    function travelMatchesBudget(cost, range) {
+      if (range.isAbove) return true;
+      return cost >= range.min && cost <= range.max;
+    }
+
+    function getTravelBudgetWarningMessage(budgetRange, ticketPrice) {
+      const budgetMax = budgetRange.isAbove ? Infinity : budgetRange.max;
+      const budgetMin = budgetRange.min;
+
+      if (budgetMax < ticketPrice) {
+        return "Your Budget is too less for the preferred Vehicle.";
+      }
+      if (budgetMin > ticketPrice) {
+        return "Your Budget is out of range for the Preferred Vehicle";
+      }
+      return "Your Budget is too less for the preferred Vehicle.";
+    }
+
+    function getSiteLogo(url) {
+      try {
+        const domain = new URL(url).hostname.replace(/^www\./, "");
+        return `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
+      } catch {
+        return "https://www.google.com/s2/favicons?domain=google.com&sz=64";
+      }
+    }
+
+    function getLuxuryHotels(cityName) {
+      return [
+        { name: `${cityName} Grand Imperial`, url: "https://www.oberoihotels.com", price: 11500 },
+        { name: `${cityName} Royal Platinum`, url: "https://www.leela.com", price: 16800 },
+        { name: `${cityName} Ultra Luxury Suites`, url: "https://www.fourseasons.com", price: 22500 }
+      ];
+    }
+
+    function getHotelsForCity(cityName) {
+      let hotels;
+
+      if (HOTELS_BY_CITY[cityName]) {
+        hotels = [...HOTELS_BY_CITY[cityName], ...getLuxuryHotels(cityName)];
+      } else {
+        hotels = [
+          { name: `${cityName} Budget Stay`, url: `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(cityName)}`, price: 650 },
+          { name: `${cityName} Comfort Inn`, url: `https://www.makemytrip.com/hotels/hotel-listing/?city=${encodeURIComponent(cityName)}`, price: 1200 },
+          { name: `${cityName} Premium Suites`, url: `https://www.goibibo.com/hotels/${encodeURIComponent(cityName.toLowerCase())}/`, price: 3200 },
+          { name: `${cityName} Luxury Resort`, url: "https://www.tajhotels.com", price: 7500 },
+          ...getLuxuryHotels(cityName)
+        ];
+      }
+
+      return applyHotelImage(hotels);
+    }
+
+    function allEntriesComplete() {
+      const budgetRange = document.getElementById("budget").value;
+      const vehicleRaw = document.getElementById("vehicle").value.trim();
+      const fromCity = document.getElementById("location-from").value;
+      const toCity = document.getElementById("location-to").value;
+      const hotelBudgetRange = document.getElementById("hotel-budget").value;
+      return budgetRange && vehicleRaw && fromCity && toCity && hotelBudgetRange;
+    }
+
+    function updateHotelResults() {
+      const hotelArea = document.getElementById("hotel-result-area");
+
+      if (!allEntriesComplete()) {
+        hotelArea.classList.add("hidden");
+        hotelArea.innerHTML = "";
+        return;
+      }
+
+      const toCityName = document.getElementById("location-to").value;
+      const hotelRange = parseBudgetRange(document.getElementById("hotel-budget").value);
+
+      const hotels = getHotelsForCity(toCityName).filter(hotel => hotelMatchesBudget(hotel, hotelRange));
+
+      if (hotels.length === 0) {
+        hotelArea.classList.remove("hidden");
+        hotelArea.innerHTML = `
+          <div class="bg-blue-800 border border-blue-600 rounded-xl p-5 mt-2">
+            <p class="text-amber-300 font-semibold text-center mb-2">Hotels in ${toCityName}</p>
+            <p class="text-red-300 text-sm text-center">No hotels found within your hotel budget range (${formatBudgetRangeLabel(hotelRange)} per person).</p>
+          </div>`;
+        return;
+      }
+
+      let html = `
+        <div class="bg-blue-800 border border-blue-600 rounded-xl p-5 mt-2">
+          <p class="text-amber-300 font-semibold text-center mb-4">Hotels in ${toCityName} (${formatBudgetRangeLabel(hotelRange)} per person)</p>
+          <div class="space-y-4">`;
+
+      hotels.forEach(hotel => {
+        html += `
+          <div class="flex items-start gap-3 border-b border-blue-700 pb-3 last:border-0 last:pb-0">
+            <img src="${hotel.image}" alt="${hotel.name}" class="w-10 h-10 rounded object-cover flex-shrink-0 border border-blue-500" />
+            <div class="flex-1 min-w-0">
+              <p class="font-bold text-white text-sm leading-tight mb-1">${hotel.name}</p>
+              <a href="${hotel.url}" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline text-xs break-all">${hotel.url}</a>
+              <p class="text-emerald-300 text-xs mt-1">₹${hotel.price.toLocaleString("en-IN")} per person/night</p>
+            </div>
+          </div>`;
+      });
+
+      html += `</div></div>`;
+      hotelArea.classList.remove("hidden");
+      hotelArea.innerHTML = html;
+    }
+
+    function populateCityDropdowns() {
+      const fromSelect = document.getElementById("location-from");
+      const toSelect = document.getElementById("location-to");
+      const sortedCities = [...INDIAN_CITIES].sort((a, b) => a.name.localeCompare(b.name));
+
+      sortedCities.forEach(city => {
+        const fromOption = document.createElement("option");
+        fromOption.value = city.name;
+        fromOption.textContent = city.name;
+        fromSelect.appendChild(fromOption);
+
+        const toOption = document.createElement("option");
+        toOption.value = city.name;
+        toOption.textContent = city.name;
+        toSelect.appendChild(toOption);
+      });
+    }
+
+    function getCityByName(name) {
+      return INDIAN_CITIES.find(city => city.name === name);
+    }
+
+    function calculateDistanceKm(fromCity, toCity) {
+      const toRad = deg => (deg * Math.PI) / 180;
+      const earthRadius = 6371;
+      const dLat = toRad(toCity.lat - fromCity.lat);
+      const dLon = toRad(toCity.lon - fromCity.lon);
+      const lat1 = toRad(fromCity.lat);
+      const lat2 = toRad(toCity.lat);
+      const a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      return Math.round(earthRadius * c);
+    }
+
+    function calculateTravelCost(vehicle, distanceKm) {
+      const rates = VEHICLE_RATES[vehicle];
+      return Math.round(rates.base + rates.perKm * distanceKm);
+    }
+
+    function showPlannerPage() {
+      document.getElementById("landing-page").classList.add("hidden");
+      document.getElementById("planner-page").classList.remove("hidden");
+      window.scrollTo(0, 0);
+    }
+
+    function showLandingPage() {
+      document.getElementById("planner-page").classList.add("hidden");
+      document.getElementById("landing-page").classList.remove("hidden");
+      window.scrollTo(0, 0);
+    }
+
+    function checkBudgetAndVehicle() {
+      const budgetRange = parseBudgetRange(document.getElementById("budget").value);
+      const vehicleRaw = document.getElementById("vehicle").value.trim().toLowerCase();
+      const fromCityName = document.getElementById("location-from").value;
+      const toCityName = document.getElementById("location-to").value;
+      const hotelBudgetVal = document.getElementById("hotel-budget").value;
+      const resultArea = document.getElementById("result-area");
+
+      updateHotelResults();
+
+      if (!budgetRange) {
+        resultArea.innerHTML = `<p class="text-red-300 text-lg font-semibold text-center">Please select your travel budget range.</p>`;
+        return;
+      }
+
+      if (!vehicleRaw) {
+        resultArea.innerHTML = `<p class="text-red-300 text-lg font-semibold text-center">Please enter your preferred vehicle.</p>`;
+        return;
+      }
+
+      if (!VALID_VEHICLES.includes(vehicleRaw)) {
+        resultArea.innerHTML = `<p class="text-red-300 text-lg font-semibold text-center">Sorry! Your preferred Vehicle is not there in our list.</p>`;
+        return;
+      }
+
+      if (!fromCityName) {
+        resultArea.innerHTML = `<p class="text-red-300 text-lg font-semibold text-center">Please select your departure city.</p>`;
+        return;
+      }
+
+      if (!toCityName) {
+        resultArea.innerHTML = `<p class="text-red-300 text-lg font-semibold text-center">Please select your destination city.</p>`;
+        return;
+      }
+
+      if (!hotelBudgetVal) {
+        resultArea.innerHTML = `<p class="text-red-300 text-lg font-semibold text-center">Please select your hotel budget range.</p>`;
+        return;
+      }
+
+      if (fromCityName === toCityName) {
+        resultArea.innerHTML = `<p class="text-red-300 text-lg font-semibold text-center">Departure and destination cities must be different.</p>`;
+        return;
+      }
+
+      const fromCity = getCityByName(fromCityName);
+      const toCity = getCityByName(toCityName);
+      const distanceKm = calculateDistanceKm(fromCity, toCity);
+      const baseCost = calculateTravelCost(vehicleRaw, distanceKm);
+
+      const allSitesWithCost = TRAVEL_SITES[vehicleRaw].map(site => ({
+        ...site,
+        cost: Math.round(baseCost * site.multiplier),
+        logo: getSiteLogo(site.url)
+      }));
+
+      const ticketPrice = Math.min(...allSitesWithCost.map(site => site.cost));
+      const sites = allSitesWithCost.filter(site => travelMatchesBudget(site.cost, budgetRange));
+
+      if (sites.length === 0) {
+        resultArea.innerHTML = `<p class="text-red-300 text-lg font-semibold text-center">${getTravelBudgetWarningMessage(budgetRange, ticketPrice)}</p>`;
+        return;
+      }
+
+      let html = `<div class="bg-blue-900 border border-blue-700 rounded-2xl p-6 space-y-5">`;
+      html += `<p class="text-emerald-300 font-semibold text-center text-lg mb-2">Route: ${fromCityName} &rarr; ${toCityName} (${distanceKm} km)</p>`;
+      html += `<p class="text-blue-200 text-center text-sm mb-4">Travel options within your budget of ${formatBudgetRangeLabel(budgetRange)} per person:</p>`;
+
+      sites.forEach(site => {
+        html += `
+          <div class="border-b border-blue-700 pb-4 last:border-0 last:pb-0">
+            <div class="flex items-start gap-3">
+              <img src="${site.logo}" alt="${site.name} logo" class="w-8 h-8 rounded object-contain flex-shrink-0 bg-white p-0.5" />
+              <div class="flex-1 min-w-0">
+                <p class="font-bold text-amber-300 text-base mb-1">${site.name}</p>
+                <a href="${site.url}" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline text-sm break-all">${site.url}</a>
+                <p class="text-blue-200 text-xs mt-1">Estimated Travel Cost: ₹${site.cost.toLocaleString("en-IN")} (${fromCityName} to ${toCityName})</p>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+
+      html += `</div>`;
+      resultArea.innerHTML = html;
+    }
+
+    populateCityDropdowns();
+  </script>
+
+</body>
+</html>

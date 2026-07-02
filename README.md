@@ -4,7 +4,7 @@ Personal portfolio landing page for **Amogh Raghavendra Deshpande** — AI Full 
 
 ## Live Preview Locally
 
-Open `index.html` in your browser, or run a simple local server:
+Open `My_Portfolio.html` in your browser, or run a simple local server:
 
 ```bash
 npx serve .
@@ -37,7 +37,7 @@ git push -u origin main
 
 ## Customize
 
-Update these placeholder links in `index.html`:
+Update these placeholder links in `My_Portfolio.html`:
 
 - GitHub profile URL (search for `https://github.com/`)
 - Project GitHub repo links
@@ -47,7 +47,7 @@ Update these placeholder links in `index.html`:
 
 ```
 My-Portfolio/
-├── index.html    # Main landing page
+├── My_Portfolio.html    # Main landing page
 ├── styles.css    # Custom styles
 ├── script.js     # Navbar, mobile menu, contact form
 └── README.md
