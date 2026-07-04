@@ -11,29 +11,38 @@
   <!-- ==================== LANDING PAGE ==================== -->
   <div id="landing-page">
 
-    <!-- Hero Section -->
-    <section class="relative flex flex-col items-center justify-center min-h-[70vh] px-6 py-20 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 text-center">
-      <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
-        Travel Mantra
-      </h1>
-      <p class="text-lg md:text-2xl text-blue-200 max-w-2xl mb-10 leading-relaxed">
-        Choose the perfect vehicle at the right cost — plan your Indian journey smartly, within your budget.
-      </p>
-      <button
-        onclick="showPlannerPage()"
-        class="bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold text-lg px-10 py-4 rounded-full shadow-lg transition transform hover:scale-105"
-      >
-        Plan Your Trip Now
-      </button>
+    <!-- Hero Section — Plan Your Trip -->
+    <section id="hero" class="relative flex flex-col items-center justify-center min-h-screen px-6 py-24 text-center overflow-hidden border-b border-slate-700/50">
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('https://images.unsplash.com/photo-1609137144813-7d7a7c4b6f3e?w=1920&q=80');"></div>
+      <div class="absolute inset-0 bg-slate-950/35"></div>
+      <div class="relative z-10 max-w-3xl mx-auto">
+        <div class="bg-slate-900/90 backdrop-blur-md rounded-3xl px-8 py-12 md:px-12 md:py-14 shadow-2xl border border-slate-600/60">
+          <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 tracking-tight">
+            Travel Mantra
+          </h1>
+          <p class="text-lg md:text-2xl text-slate-200 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Choose the perfect vehicle at the right cost — plan your Indian journey smartly, within your budget.
+          </p>
+          <button
+            onclick="showPlannerPage()"
+            class="bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold text-lg px-10 py-4 rounded-full shadow-lg transition transform hover:scale-105"
+          >
+            Plan Your Trip Now
+          </button>
+        </div>
+      </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="px-6 py-16 bg-slate-800">
-      <h2 class="text-3xl font-bold text-center text-amber-300 mb-12">Our Travel Options</h2>
-      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+    <!-- Our Travel Options Section -->
+    <section id="travel-options" class="relative px-6 py-20 overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1920&q=80');"></div>
+      <div class="absolute inset-0 bg-slate-950/85"></div>
+      <div class="relative z-10 max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-amber-300 mb-12 drop-shadow-md">Our Travel Options</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
         <!-- Flight -->
-        <div class="bg-slate-700 rounded-2xl overflow-hidden shadow-xl text-center">
+        <div class="bg-slate-800/95 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl text-center border border-slate-600/60">
           <img
             src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=350&fit=crop"
             alt="Flight"
@@ -52,7 +61,7 @@
         </div>
 
         <!-- Indian Railways -->
-        <div class="bg-slate-700 rounded-2xl overflow-hidden shadow-xl text-center">
+        <div class="bg-slate-800/95 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl text-center border border-slate-600/60">
           <img
             src="https://media.assettype.com/outlookbusiness/import/uploadimage/library/16_9/16_9_5/IRCTC_1647099628.webp?w=800&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0"
             alt="Indian Railways train"
@@ -71,7 +80,7 @@
         </div>
 
         <!-- Bus -->
-        <div class="bg-slate-700 rounded-2xl overflow-hidden shadow-xl text-center">
+        <div class="bg-slate-800/95 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl text-center border border-slate-600/60">
           <img
             src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&h=350&fit=crop"
             alt="Bus"
@@ -90,17 +99,21 @@
         </div>
 
       </div>
+      </div>
     </section>
 
     <!-- Top Hotels in different cities of India -->
-    <section class="px-6 py-16 bg-gradient-to-b from-slate-900 to-blue-950">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-amber-300 mb-12">
+    <section class="relative px-6 py-16 overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80');"></div>
+      <div class="absolute inset-0 bg-slate-950/85"></div>
+      <div class="relative z-10 max-w-6xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-amber-300 mb-12 drop-shadow-md">
         Top Hotels in different cities of India 
       </h2>
-      <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
         <!-- Delhi -->
-        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+        <div class="bg-slate-900/90 backdrop-blur-sm border border-slate-600/70 rounded-xl p-5 shadow-lg">
           <h3 class="text-xl font-bold text-sky-300 mb-3">Delhi</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">The Taj Mahal Hotel</a> <span class="text-emerald-400 font-semibold"></span></li>
@@ -110,7 +123,7 @@
         </div>
 
         <!-- Mumbai -->
-        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+        <div class="bg-slate-900/90 backdrop-blur-sm border border-slate-600/70 rounded-xl p-5 shadow-lg">
           <h3 class="text-xl font-bold text-sky-300 mb-3">Mumbai</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Mahal Palace</a> <span class="text-emerald-400 font-semibold"></span></li>
@@ -120,7 +133,7 @@
         </div>
 
         <!-- Bangalore -->
-        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+        <div class="bg-slate-900/90 backdrop-blur-sm border border-slate-600/70 rounded-xl p-5 shadow-lg">
           <h3 class="text-xl font-bold text-sky-300 mb-3">Bangalore</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="https://www.itchotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">ITC Gardenia</a> <span class="text-emerald-400 font-semibold"></span></li>
@@ -130,7 +143,7 @@
         </div>
 
         <!-- Chennai -->
-        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+        <div class="bg-slate-900/90 backdrop-blur-sm border border-slate-600/70 rounded-xl p-5 shadow-lg">
           <h3 class="text-xl font-bold text-sky-300 mb-3">Chennai</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Coromandel</a> <span class="text-emerald-400 font-semibold"></span></li>
@@ -140,7 +153,7 @@
         </div>
 
         <!-- Kolkata -->
-        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+        <div class="bg-slate-900/90 backdrop-blur-sm border border-slate-600/70 rounded-xl p-5 shadow-lg">
           <h3 class="text-xl font-bold text-sky-300 mb-3">Kolkata</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Bengal</a> <span class="text-emerald-400 font-semibold"></span></li>
@@ -150,7 +163,7 @@
         </div>
 
         <!-- Hyderabad -->
-        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+        <div class="bg-slate-900/90 backdrop-blur-sm border border-slate-600/70 rounded-xl p-5 shadow-lg">
           <h3 class="text-xl font-bold text-sky-300 mb-3">Hyderabad</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Falaknuma Palace</a> <span class="text-emerald-400 font-semibold"></span></li>
@@ -160,7 +173,7 @@
         </div>
 
         <!-- Jaipur -->
-        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+        <div class="bg-slate-900/90 backdrop-blur-sm border border-slate-600/70 rounded-xl p-5 shadow-lg">
           <h3 class="text-xl font-bold text-sky-300 mb-3">Jaipur</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Rambagh Palace</a> <span class="text-emerald-400 font-semibold"></span></li>
@@ -170,7 +183,7 @@
         </div>
 
         <!-- Goa -->
-        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+        <div class="bg-slate-900/90 backdrop-blur-sm border border-slate-600/70 rounded-xl p-5 shadow-lg">
           <h3 class="text-xl font-bold text-sky-300 mb-3">Goa</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Exotica Resort</a> <span class="text-emerald-400 font-semibold"></span></li>
@@ -180,7 +193,7 @@
         </div>
 
         <!-- Agra -->
-        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+        <div class="bg-slate-900/90 backdrop-blur-sm border border-slate-600/70 rounded-xl p-5 shadow-lg">
           <h3 class="text-xl font-bold text-sky-300 mb-3">Agra</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="https://www.oberoihotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">The Oberoi Amarvilas</a> <span class="text-emerald-400 font-semibold"></span></li>
@@ -190,7 +203,7 @@
         </div>
 
         <!-- Kochi -->
-        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+        <div class="bg-slate-900/90 backdrop-blur-sm border border-slate-600/70 rounded-xl p-5 shadow-lg">
           <h3 class="text-xl font-bold text-sky-300 mb-3">Kochi</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Malabar Resort</a> <span class="text-emerald-400 font-semibold"></span></li>
@@ -200,7 +213,7 @@
         </div>
 
         <!-- Varanasi -->
-        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+        <div class="bg-slate-900/90 backdrop-blur-sm border border-slate-600/70 rounded-xl p-5 shadow-lg">
           <h3 class="text-xl font-bold text-sky-300 mb-3">Varanasi</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Ganges</a> <span class="text-emerald-400 font-semibold"></span></li>
@@ -210,7 +223,7 @@
         </div>
 
         <!-- Udaipur -->
-        <div class="bg-slate-800 border border-slate-600 rounded-xl p-5">
+        <div class="bg-slate-900/90 backdrop-blur-sm border border-slate-600/70 rounded-xl p-5 shadow-lg">
           <h3 class="text-xl font-bold text-sky-300 mb-3">Udaipur</h3>
           <ul class="space-y-2 text-sm">
             <li><a href="https://www.tajhotels.com" target="_blank" class="text-cyan-300 hover:text-cyan-100 underline">Taj Lake Palace</a> <span class="text-emerald-400 font-semibold"></span></li>
@@ -219,6 +232,7 @@
           </ul>
         </div>
 
+      </div>
       </div>
     </section>
 

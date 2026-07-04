@@ -78,67 +78,73 @@
 
     <!-- Hero -->
     <section id="hero" class="min-h-screen flex items-center justify-center pt-14 sm:pt-16 relative overflow-hidden">
-      <div class="hero-glow absolute inset-0 pointer-events-none"></div>
-      <div class="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 relative text-center md:text-left">
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&q=80');"></div>
+      <div class="absolute inset-0 bg-slate-950/75"></div>
+      <div class="hero-glow absolute inset-0 pointer-events-none opacity-50"></div>
+      <div class="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 relative z-10 text-center md:text-left">
         <div class="flex flex-col items-center md:items-start">
-          <p class="text-sm sm:text-base text-accent font-medium mb-3 sm:mb-4 animate-fade-in">Hello, I'm</p>
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-3 sm:mb-4 animate-fade-in">
+          <div class="w-full max-w-2xl bg-slate-100/95 backdrop-blur-md rounded-2xl p-6 sm:p-8 lg:p-10 shadow-2xl border border-slate-300/80">
+          <p class="text-sm sm:text-base text-cyan-700 font-semibold mb-3 sm:mb-4 animate-fade-in">Hello, I'm</p>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-3 sm:mb-4 animate-fade-in">
             Amogh Raghavendra<br class="hidden sm:block" />
             <span class="sm:hidden"> </span>Deshpande
           </h1>
-          <p class="text-lg sm:text-xl md:text-2xl text-slate-400 font-medium mb-4 sm:mb-6 animate-fade-in">
+          <p class="text-lg sm:text-xl md:text-2xl text-slate-800 font-semibold mb-4 sm:mb-6 animate-fade-in">
             Full Stack Developer
           </p>
-          <p class="text-sm sm:text-base text-slate-400 max-w-md sm:max-w-lg lg:max-w-xl mb-8 sm:mb-10 leading-relaxed animate-fade-in">
+          <p class="text-sm sm:text-base text-slate-700 max-w-md sm:max-w-lg lg:max-w-xl mb-8 sm:mb-10 leading-relaxed animate-fade-in">
             Building modern web experiences with AI-native workflows. B.Tech student at VIT Chennai, passionate about full-stack development.
           </p>
           <div class="flex flex-col sm:flex-row w-full sm:w-auto gap-3 sm:gap-4 animate-fade-in">
-            <a href="#projects" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-surface bg-accent rounded-lg hover:bg-accent-dark transition-all hover:scale-105">
+            <a href="#projects" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white bg-accent rounded-lg hover:bg-accent-dark transition-all hover:scale-105">
               View My Work
               <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
               </svg>
             </a>
-            <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-white border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-all">
+            <a href="#contact" class="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold text-slate-800 border border-slate-400 rounded-lg hover:border-accent hover:text-accent transition-all">
               Contact Me
             </a>
+          </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="py-12 sm:py-16 lg:py-20 bg-surface-light/50">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2 sm:mb-4">
+    <section id="about" class="relative py-12 sm:py-16 lg:py-20">
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1920&q=80');"></div>
+      <div class="absolute inset-0 bg-slate-900/88"></div>
+      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2 sm:mb-4 drop-shadow-md">
           About Me
           <span class="block w-12 h-1 bg-accent mt-2 rounded"></span>
         </h2>
         <div class="grid md:grid-cols-2 gap-8 lg:gap-12 mt-6 sm:mt-8">
-          <div class="space-y-4">
-            <p class="text-sm sm:text-base lg:text-lg text-slate-300 leading-relaxed">
+          <div class="space-y-4 p-5 sm:p-6 rounded-xl bg-slate-900/75 backdrop-blur-sm border border-slate-700/60">
+            <p class="text-sm sm:text-base lg:text-lg text-slate-200 leading-relaxed">
               Hello AI-Native Developers. My Name is <span class="text-white font-medium">Amogh Raghavendra Deshpande</span>.
               I am currently a 2nd Year B.Tech student at VIT Chennai. My learning focus is to become a full-stack builder.
             </p>
-            <p class="text-sm sm:text-base lg:text-lg text-slate-300 leading-relaxed">
+            <p class="text-sm sm:text-base lg:text-lg text-slate-200 leading-relaxed">
               In the past two-three weeks, I have build three websites — <span class="text-accent">Travel Mantra</span> (a travel website),
               <span class="text-accent">Novamind</span> (a website for research papers), and a landing page called
               <span class="text-accent">index.html</span>.
             </p>
           </div>
-          <div>
+          <div class="p-5 sm:p-6 rounded-xl bg-slate-900/75 backdrop-blur-sm border border-slate-700/60">
             <h3 class="text-lg sm:text-xl font-semibold text-white mb-4">Skills &amp; Background</h3>
-            <p class="text-sm sm:text-base text-slate-400 mb-4 leading-relaxed">
+            <p class="text-sm sm:text-base text-slate-300 mb-4 leading-relaxed">
               I work with modern front-end tools to build responsive, accessible websites. Currently expanding into full-stack development with a focus on AI-native workflows.
             </p>
             <div class="flex flex-wrap gap-2 sm:gap-3">
-              <span class="px-3 py-1.5 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg">HTML</span>
-              <span class="px-3 py-1.5 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg">CSS</span>
-              <span class="px-3 py-1.5 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg">Tailwind CSS</span>
-              <span class="px-3 py-1.5 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg">JavaScript</span>
-              <span class="px-3 py-1.5 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg">Git</span>
-              <span class="px-3 py-1.5 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg">GitHub</span>
-              <span class="px-3 py-1.5 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg">Responsive Design</span>
+              <span class="px-3 py-1.5 text-xs sm:text-sm font-medium bg-slate-800/90 text-slate-200 border border-slate-600 rounded-lg">HTML</span>
+              <span class="px-3 py-1.5 text-xs sm:text-sm font-medium bg-slate-800/90 text-slate-200 border border-slate-600 rounded-lg">CSS</span>
+              <span class="px-3 py-1.5 text-xs sm:text-sm font-medium bg-slate-800/90 text-slate-200 border border-slate-600 rounded-lg">Tailwind CSS</span>
+              <span class="px-3 py-1.5 text-xs sm:text-sm font-medium bg-slate-800/90 text-slate-200 border border-slate-600 rounded-lg">JavaScript</span>
+              <span class="px-3 py-1.5 text-xs sm:text-sm font-medium bg-slate-800/90 text-slate-200 border border-slate-600 rounded-lg">Git</span>
+              <span class="px-3 py-1.5 text-xs sm:text-sm font-medium bg-slate-800/90 text-slate-200 border border-slate-600 rounded-lg">GitHub</span>
+              <span class="px-3 py-1.5 text-xs sm:text-sm font-medium bg-slate-800/90 text-slate-200 border border-slate-600 rounded-lg">Responsive Design</span>
             </div>
           </div>
         </div>
@@ -146,20 +152,22 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="py-12 sm:py-16 lg:py-20">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2 sm:mb-4">
+    <section id="projects" class="relative py-12 sm:py-16 lg:py-20">
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80');"></div>
+      <div class="absolute inset-0 bg-slate-950/90"></div>
+      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2 sm:mb-4 drop-shadow-md">
           Projects
           <span class="block w-12 h-1 bg-accent mt-2 rounded"></span>
         </h2>
-        <p class="text-sm sm:text-base text-slate-400 mb-8 sm:mb-10 max-w-2xl">
+        <p class="text-sm sm:text-base text-slate-200 mb-8 sm:mb-10 max-w-2xl drop-shadow-sm">
           A selection of websites I've built recently while learning full-stack development.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
 
           <!-- Travel Mantra -->
-          <article class="flex flex-col p-4 sm:p-6 bg-surface-light border border-slate-700 rounded-xl hover:border-accent/40 hover:-translate-y-1 transition-all duration-300">
+          <article class="flex flex-col p-4 sm:p-6 bg-slate-900/90 backdrop-blur-md border border-slate-600/80 rounded-xl hover:border-accent/40 hover:-translate-y-1 transition-all duration-300 shadow-lg">
             <div class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 mb-4 rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-600/20 text-cyan-400">
               <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -185,7 +193,7 @@
           </article>
 
           <!-- NovaMind -->
-          <article class="flex flex-col p-4 sm:p-6 bg-surface-light border border-slate-700 rounded-xl hover:border-accent/40 hover:-translate-y-1 transition-all duration-300">
+          <article class="flex flex-col p-4 sm:p-6 bg-slate-900/90 backdrop-blur-md border border-slate-600/80 rounded-xl hover:border-accent/40 hover:-translate-y-1 transition-all duration-300 shadow-lg">
             <div class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 mb-4 rounded-xl bg-gradient-to-br from-violet-500/20 to-purple-600/20 text-violet-400">
               <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
@@ -212,7 +220,7 @@
           </article>
 
           <!-- index -->
-          <article class="flex flex-col p-4 sm:p-6 bg-surface-light border border-slate-700 rounded-xl hover:border-accent/40 hover:-translate-y-1 transition-all duration-300 sm:col-span-2 lg:col-span-1">
+          <article class="flex flex-col p-4 sm:p-6 bg-slate-900/90 backdrop-blur-md border border-slate-600/80 rounded-xl hover:border-accent/40 hover:-translate-y-1 transition-all duration-300 shadow-lg sm:col-span-2 lg:col-span-1">
             <div class="flex items-center justify-center w-12 h-12 sm:w-14 sm:h-14 mb-4 rounded-xl bg-gradient-to-br from-emerald-500/20 to-teal-600/20 text-emerald-400">
               <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
@@ -241,24 +249,26 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="py-12 sm:py-16 lg:py-20 bg-surface-light/50">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2 sm:mb-4">
+    <section id="skills" class="relative py-12 sm:py-16 lg:py-20">
+      <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&q=80');"></div>
+      <div class="absolute inset-0 bg-slate-900/88"></div>
+      <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2 sm:mb-4 drop-shadow-md">
           Skills &amp; Tools
           <span class="block w-12 h-1 bg-accent mt-2 rounded"></span>
         </h2>
-        <p class="text-sm sm:text-base text-slate-400 mb-6 sm:mb-10 max-w-2xl">
+        <p class="text-sm sm:text-base text-slate-200 mb-6 sm:mb-10 max-w-2xl drop-shadow-sm">
           Technologies I use to build web projects.
         </p>
         <div class="flex flex-wrap gap-2 sm:gap-3">
-          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">HTML</span>
-          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">CSS</span>
-          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">Tailwind CSS</span>
-          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">JavaScript</span>
-          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">Git</span>
-          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">GitHub</span>
-          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">Responsive Design</span>
-          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-surface-light text-slate-300 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">Vercel</span>
+          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-slate-900/85 backdrop-blur-sm text-slate-200 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">HTML</span>
+          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-slate-900/85 backdrop-blur-sm text-slate-200 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">CSS</span>
+          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-slate-900/85 backdrop-blur-sm text-slate-200 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">Tailwind CSS</span>
+          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-slate-900/85 backdrop-blur-sm text-slate-200 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">JavaScript</span>
+          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-slate-900/85 backdrop-blur-sm text-slate-200 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">Git</span>
+          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-slate-900/85 backdrop-blur-sm text-slate-200 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">GitHub</span>
+          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-slate-900/85 backdrop-blur-sm text-slate-200 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">Responsive Design</span>
+          <span class="px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium bg-slate-900/85 backdrop-blur-sm text-slate-200 border border-slate-600 rounded-lg hover:border-accent hover:text-accent transition-colors">Vercel</span>
         </div>
       </div>
     </section>
